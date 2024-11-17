@@ -61,7 +61,7 @@ nav a {
 
 .hero-image {
     width: 100%;
-    max-width: 600%;
+    max-width: 200px;
     height: auto;
     border-radius: 10px;
 }
@@ -85,8 +85,10 @@ nav a {
 }
 
 /* Products Section */
-#products h2 {
-    padding: 40px 0 0 40px;
+
+#products {
+    text-align: center;
+    padding: 20px;
 }
 
 .product-list {
@@ -104,6 +106,7 @@ nav a {
 
 .product img {
     width: 100%;
+    max-width: 100px;
     height: auto;
     border-radius: 10px;
 }
@@ -224,6 +227,21 @@ footer p {
 
     form input,
     form textarea {
-        
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .product {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .testimonial {
+        width: 100%
     }
 }
